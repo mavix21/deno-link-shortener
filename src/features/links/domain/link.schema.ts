@@ -1,4 +1,4 @@
-import { Schema } from 'effect'
+import { Schema } from "effect";
 
 const Link = Schema.Struct({
   shortCode: Schema.String,
@@ -6,7 +6,7 @@ const Link = Schema.Struct({
   createdAt: Schema.Number,
   userId: Schema.String,
   clickCount: Schema.Number,
-  lastClickedEvent: Schema.optionalWith(Schema.Number, { exact: true })
-})
+  lastClickedEvent: Schema.optional(Schema.Number),
+});
 
-type Link = Schema.Schema.Type<typeof Link>
+type Link = Schema.Schema.Type<typeof Link>;
