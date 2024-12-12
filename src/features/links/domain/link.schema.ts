@@ -9,4 +9,4 @@ const Link = Schema.Struct({
   lastClickedEvent: Schema.optional(Schema.Number),
 });
 
-type Link = Schema.Schema.Type<typeof Link>;
+export type Link = Schema.Schema.Type<typeof Link>;
